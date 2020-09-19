@@ -1,0 +1,21 @@
+note :
+status ruang -> 
+	1. status Rusak :
+		di tabel ruang, ditambah kolom status_ruang
+		buat ngasih status, ruangan dapat digunakan ato tidak.
+		di ruang juga tak tambain id_kelas >> tau dia kelas yg terjadwal ato bukan
+	2. status jadwal : ngecek di tabel jadwal, ruangan yg terjadwal mana aja
+		<note : di tabel jadwal kutambain kolom id_matkul, buatnyambungin matkul sama jadwal>
+		**< status jadwal dilihat berdasarkan hari, hari senin ruangannya terpakai, belum tentu selasa dipakai>
+	3. status pinjam : ngecek di tabel pinjam ada ato g yg statusnya booking & dipinjam
+		kalo statusnya dikembalikan akan kembali ke status jadwal ato kosong.
+		**< kutambain tabel pinjam_tmp >> ini buat nyimpan sementara, fungsinya sama kayak tabel pinjam. cuman kalo pinjam_tmp, status kembali akan dihapus dari tabel>>
+	4. status putih : jika tidak rusak di tabel ruang, tidak ada jadwal, dan dipinjam tidak ada status di booking/dipinjam
+	
+	
+peminjaman :
+otomatis : kalo warna kuning
+manual : ruang warna putih
+
+lapor :
+gambar kusimpan diserver. 
